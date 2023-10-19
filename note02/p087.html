@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문자열 연산자, 인덱스, length</title>
+  </head>
+  <body>
+    <h1>문자열 연산자, 인덱스, length</h1>
+    <script>
+      var str1 = "abcdefghijklmnopqrstuvwxyz";
+      console.log(str1);
+      console.log(str1.length);
+      console.log(str1[3]);
+      //컴퓨터는 숫자를 계산할때 0부터 계산을 하기에 0,1,2..순으로 계산한다.
+      console.log(str1[4]);
+
+      var str2 = str1[3] + str1[14] + str1[6];
+      console.log(str2);
+      console.log(str2.length);
+
+      var str3 = str1[14] + str1[17] + str1[0] + str1[13] + str1[6] + str1[4];
+      console.log(str3);
+      console.log(str3.length);
+
+      var str4 =
+        str1[8] +
+        str1[11] +
+        str1[14] +
+        str1[21] +
+        str1[4] +
+        str1[24] +
+        str1[14] +
+        str1[20];
+      console.log(str4);
+      console.log(str4.length);
+    </script>
+  </body>
+</html>
