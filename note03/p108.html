@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 200px;
+        text-align: center;
+      }
+      tr {
+        border: 1px solid black;
+      }
+      td {
+        border: 1px solid black;
+        width: 25%;
+      }
+    </style>
+    <script>
+      //변수를 선언합니다.
+      let list = "";
+
+      //연산자를 사용합니다.
+      list += "<ul>";
+      list += "<li>Hello</li>";
+      list += "<li>JavaScript..!</li>";
+      list += "</ul>";
+
+      list += "<h2>&& and </h2>";
+      list += '<table class="a">';
+      list += "<tr><td>false</td><td>false</td><td>false</td></tr>";
+      list += "<tr><td>true</td><td>false</td><td>false</td></tr>";
+      list += "<tr><td>false</td><td>true</td><td>false</td></tr>";
+      list += "<tr><td>true</td><td>true</td><td>true</td></tr>";
+      list += "</table>";
+
+      list += "<h2>|| or </h2>";
+      list += '<table class="a">';
+      list += "<tr><td>false</td><td>false</td><td>false</td></tr>";
+      list += "<tr><td>true</td><td>false</td><td>true</td></tr>";
+      list += "<tr><td>false</td><td>true</td><td>true</td></tr>";
+      list += "<tr><td>true</td><td>true</td><td>true</td></tr>";
+
+      //문서에 출력합니다.
+      document.write(list);
+    </script>
+  </head>
+  <body></body>
+</html>
