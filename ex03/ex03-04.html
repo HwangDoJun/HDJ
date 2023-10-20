@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 200px;
+        text-align: center;
+      }
+      td {
+        background-color: aqua;
+      }
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        width: 50%;
+        text-align: center;
+      }
+      tr:nth-child(2n) {
+        background-color: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const input = +prompt("몇 단을 표현할까요?", 2);
+      // let 뒤에는 아무 이름이나 써도 된다 참고
+      let list = "";
+      list += `          <table>`;
+      list += `          <tr>`;
+      list += `          <td>${input}단</td>`;
+      list += `          <td>결과</td>`;
+      list += `        </tr>`;
+      list += `        <tr>`;
+      list += `          <th>${input} x 1</th>`;
+      list += `          <th>${input * 1}</th>`;
+      list += `        </tr>`;
+      list += `        <tr>`;
+      list += `          <th>${input} x 2</th>`;
+      list += `          <th>${input * 2}</th>`;
+      list += `        </tr>`;
+      list += `        <tr>`;
+      list += `          <th>${input} x 3</th>`;
+      list += `          <th>${input * 3}</th>`;
+      list += `        </tr>`;
+      list += `        <tr>`;
+      list += `          <th>${input} x 4</th>`;
+      list += `          <th>${input * 4}</th>`;
+      list += `        </tr>`;
+      list += `        <tr>`;
+      list += `          <th>${input} x 5</th>`;
+      list += `          <th>${input * 5}</th>`;
+      list += `        </tr>`;
+      list += `        <tr>`;
+      list += `          <th>${input} x 6</th>`;
+      list += `          <th>${input * 6}</th>`;
+      list += `        </tr>`;
+      list += `        <tr>`;
+      list += `          <th>${input} x 7</th>`;
+      list += `          <th>${input * 7}</th>`;
+      list += `        </tr>`;
+      list += `        <tr>`;
+      list += `          <th>${input} x 8</th>`;
+      list += `          <th>${input * 8}</th>`;
+      list += `        </tr>`;
+      list += `        <tr>`;
+      list += `          <th>${input} x 9</th>`;
+      list += `          <th>${input * 9}</th>`;
+      list += `        </tr>`;
+      list += `      </table>`;
+      document.write(list);
+    </script>
+  </body>
+</html>
