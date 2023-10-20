@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const score1 = +prompt("국어점수를 입력하시오.", "100");
+
+      const score2 = +prompt("수학점수를 입력하시오.", "100");
+
+      const score3 = +prompt("영어점수를 입력하시오.", "100");
+
+      const score4 = +prompt("과학점수를 입력하시오.", "100");
+
+      var result = (score1 + score2 + score3 + score4) / 4;
+      console.log(result);
+      document.write(`<h1>시험성적의 과목 평균</h1>
+      <h2>
+        <pre>
+          국어점수: ${score1}점
+          수학점수: ${score2}점
+          영어점수: ${score3}점
+          과학점수: ${score4}점
+          <span>평균은 ${result}입니다.</span>
+          </pre>
+        </h2>`);
+    </script>
+  </body>
+</html>

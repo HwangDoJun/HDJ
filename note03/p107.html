@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상수와 변수 복합 대입 연산자</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 550px;
+        text-align:center;
+      }
+      th {
+        border: 1px solid gray;
+        background-color: aquamarine;
+        
+      }
+      #fk{
+        background-color:aquamarine;
+      }
+      td {
+        border: 1px solid gray;
+        width: 25%;
+      }
+    </style>
+    <script>
+      const str = "<<복합대입연산자>>=============";
+      console.log(str);
+
+      let a = 10;
+      let b = 7;
+      let c = 11;
+      let d = 13;
+      let e = 11;
+      console.log(`a=${a}, b=${b}, c=${c}, d=${d}, e=${e} 일때`);
+      console.log(`a+=2 => ${(a += 2)}`);
+      console.log("a=", a);
+      console.log(`a-=2 => ${(a -= 2)}`);
+      console.log("a=", a);
+      console.log(`a*=2 => ${(a *= 2)}`);
+      console.log("a=", a);
+      console.log(`a/=2 => ${(a /= 2)}`);
+      console.log("a=", a);
+      console.log(`a%=2 => ${(a %= 2)}`);
+      console.log("a=", a);
+    </script>
+  </head>
+  <body>
+    
+      <h1>상수와 변수, 복합대입연산자</h1>
+      <th>
+        <td>
+          <h3>const는 변하지 않는 값을 선언할 때 : const 이름 = 값;</h3>
+        </td>
+        <td>
+          <h3>let은 변할 가능성이 있는 값을 선언할 때 : let 이름 = 값;</h3>
+        </td>
+        <td>
+          <h2>
+            복합대입연산자는 대입연산자와 다른 연산자를 함께 사용하는 연산자
+          </h2>
+        </td>
+    <table>
+        <tr id="fk">
+            <td>복합 대입 연산자</td>
+            <td>설명</td>
+            <td>사용 예</td>
+            <td>의미</td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>기존 변수의 값에 값을 더합니다.</td>
+            <td>a +=1</td>
+            <td>a=a+1</td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>기존 변수의 값에 값을 뺍니다.</td>
+            <td>a -=1</td>
+            <td>a=a-1</td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td>기존 변수의 값에 값을 곱합니다.</td>
+            <td>a *=1</td>
+            <td>a=a*1</td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td>기존 변수의 값에 값을 나눕니다.</td>
+            <td>a /=1</td>
+            <td>a=a/1</td>
+        </tr>
+        <tr>
+            <td>%=</td>
+            <td>기존 변수의 값의 나머지를 구합니다.</td>
+            <td>a %=1</td>
+            <td>a=a%1</td>
+        </tr>
+      </ul>
+    </table>
+  </body>
+</html>
