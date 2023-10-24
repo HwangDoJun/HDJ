@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>구구단(2단)</title>
+    <script>
+      const input = +prompt("몇 단을 표현할까요?", 2); //앞에 +나 뒤에 *같은 부호를 붙이면 숫자로 인식한다.
+      let list = "";
+      list += `    <table>`;
+      list += `  <tr>`;
+      list += `    <th>식</th>`;
+      list += `    <th>답</th>`;
+      list += `  </tr>`;
+
+      for (let i = 0; i < 9; i++) {
+        list += `  <tr>`;
+        list += `    <td>${input} x ${i + 1}=</td>`;
+        list += `    <td>${input * (i + 1)}</td>`;
+        list += `  </tr>`;
+      }
+
+      //   for (let i = 1; i <= 9; i++) {
+      //     list += `  <tr>`;
+      //     list += `    <td>${input} x ${i}=</td>`;
+      //     list += `    <td>${input * i}</td>`;
+      //     list += `  </tr>`;
+      //   }
+
+      list += `</table>`;
+      document.write(list);
+    </script>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        width: 50%;
+        border: 1px solid black;
+        text-align: center;
+      }
+      th {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
