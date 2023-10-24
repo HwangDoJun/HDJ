@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const array = [
+        11,
+        22,
+        33,
+        44,
+        55,
+        true,
+        "String",
+        [11, 22, 33],
+        function () {},
+      ];
+      console.log(array);
+      console.log(array[2]);
+      console.log(array[3]);
+      console.log(array[4]);
+      console.log(array[5]);
+      console.log(array[4 + 1]); //계산식으로도 기입 가능하니 참고
+      console.log(array[6].length); //뒤에 .length를 붙이면 해당 요소의 길이를 구해준다.
+      console.log(array[6][2]); //String에서 3번째 철자가 나타난다(0부터 시작하니 2를 입력하면 3번째)
+      console.log(array[7][2]);
+      console.log(array[8]);
+      console.log(array.length);
+    </script>
+  </head>
+  <body></body>
+</html>

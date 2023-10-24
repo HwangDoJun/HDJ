@@ -7,16 +7,15 @@
     <script>
       const input = confirm("역사 좋아해?");
 
-      const result =  ? "축하합니다" : "돌아가라 애송이";
+      // const result = input == true ? "축하합니다" : "돌아가라 애송이";
 
-      if (number === 1) {
+      if (input == true) {
         alert("축하합니다.");
         console.log(
           "%c축하합니다!",
           "border: 1px solid red;margin: 20px;color: blue;font: size 2rem;background-color: yellowgreen;"
         );
-      }
-      if (number === 0) {
+      } else {
         alert("취소되었습니다.");
         console.log("취소되었습니다.");
       }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>random</title>
+    <script>
+      //   const ran = Math.random() * 100; //Math.random() : 0 에서 1 까지의 임의의 값
+      //   console.log(ran);
+
+      const ran = Math.floor(Math.random() * 100); //Math.random() : 0 에서 1 까지의 임의의 값
+      console.log(ran, "%");
+
+      if (ran < 5) {
+        document.write("레어 아이템 당첨", ran + "%");
+      } else {
+        document.write("일반 아이템 드랍", ran + "%");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
