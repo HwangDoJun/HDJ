@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const tem = prompt("지금 온도를 입력해주세요.");
+
+      let list = "";
+      list += `   <table>`;
+      list += `   <div>`;
+      list += `     <tr>`;
+      list += `       <td colspan="6" class="aa">16미만</td>`;
+      list += `       <td colspan="4" class="bb">16이상 ~ 22미만</td>`;
+      list += `       <td colspan="4" class="bb">22이상 ~ 28미만</td>`;
+      list += `       <td colspan="3" class="cc">28이상 ~ 32미만</td>`;
+      list += `       <td colspan="6" class="aa">32이상</td>`;
+      list += `     </tr>`;
+      list += ` <tr>`;
+
+      for (i = 0; i < 6; i++) {
+        list += `<th class="c1"></th>`;
+      }
+      for (i = 0; i < 4; i++) {
+        list += `<th class="c2"></th>`;
+      }
+      for (i = 0; i < 4; i++) {
+        list += `<th class="c3"></th>`;
+      }
+      for (i = 0; i < 3; i++) {
+        list += `<th class="c4"></th>`;
+      }
+      for (i = 0; i < 6; i++) {
+        list += `<th class="c5"></th>`;
+      }
+
+      let wh = (wh2 = wh3 = wh4 = wh5 = "white");
+
+      if (tem < 16) {
+        console.log("싸늘하네요");
+        wh = "black";
+      } else if (16 <= tem && tem < 22) {
+        console.log("시원하네요");
+        wh2 = "black";
+      } else if (22 <= tem && tem < 28) {
+        console.log("따뜻하네요");
+        wh3 = "black";
+      } else if (28 <= tem && tem < 32) {
+        console.log("덥네요");
+        wh4 = "black";
+      } else {
+        console.log("매우 뜨겁네요");
+        wh5 = "black";
+      }
+
+      list += `</tr>`;
+      list += `<td style="color:${wh}" colspan="6" class="aa">싸늘하네요</td>`;
+      list += `<td style="color:${wh2}" colspan="4" class="bb">시원하네요</td>`;
+      list += `<td style="color:${wh3}" colspan="4" class="bb">따뜻하네요</td>`;
+      list += `<td style="color:${wh4}" colspan="3" class="cc">덥네요</td>`;
+      list += `<td style="color:${wh5}" colspan="6" class="aa">매우 뜨겁네요</td>`;
+
+      list += `      </div>`;
+      list += `      </table>`;
+      list += `<h2>지금 온도는 ${tem}도이며, 상태는</h2>`;
+      document.write(list);
+    </script>
+    <style>
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      table {
+        border-collapse: collapse;
+        width: 98%;
+        height: 90px;
+      }
+      tr {
+        width: 70%;
+        height: 30px;
+      }
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        height: 30px;
+        text-align: center;
+      }
+      th {
+        height: 30px;
+      }
+      .c1 {
+        background-color: purple;
+      }
+      .c2 {
+        background-color: blue;
+      }
+      .c3 {
+        background-color: yellow;
+      }
+      .c4 {
+        background-color: orange;
+      }
+      .c5 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

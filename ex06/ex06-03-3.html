@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const arr = [33, 123, 11];
+      console.log(arr);
+
+      const arr2 = arr.splice(0, 3, 11, 33, 123);
+      console.log(arr);
+
+      const arr3 = arr.splice(1, 1, "a");
+      console.log(arr);
+
+      const arr4 = arr.splice(2, 2, [11, 22, 44, 55]);
+      console.log(arr);
+      console.log(arr.length);
+      console.log(arr[2].length);
+      console.log(arr[2][3]);
+
+      const arr5 = arr.splice(3, 0, "b", "c", "String", "4x4x3=48");
+      console.log(arr);
+      console.log(arr[5][4]);
+      console.log(arr[2][1]);
+      console.log(arr[6][5]);
+      console.log(arr[6].length);
+
+      const arr6 = arr.splice(7, 0, function () {});
+      console.log(arr);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -3,56 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>const와 let의 차이</title>
     <script>
-      let num;
-      let list = "";
-
-      list += `       <table>`;
-      list += `      <div>`;
-
-      for (i = 0; i < 300; i++) {
-        num = i + 1;
-        if (i % 10 == 0) {
-          list += `       <tr>`;
-        }
-
-        if (num % 15 == 0) {
-          console.log("아싸!!");
-          list += `         <td>아싸</td>`;
-        }
-        if (num % 3 == 0 && !(num % 15 == 0)) {
-          console.log("짝!!");
-          list += `         <td>짝</td>`;
-        }
-        if (num % 5 == 0 && !(num % 15 == 0)) {
-          console.log("와우!");
-          list += `         <td>와우</td>`;
-        }
-        if (!(num % 3 == 0) && !(num % 5 == 0)) {
-          console.log(num);
-          list += `         <td>${num}</td>`;
-        }
-        if (num % 10 == 0) {
-          list += `       </tr>`;
-        }
+      let name = "홍길동";
+      if (1) {
+        let name = "슈퍼맨";
+        console.log(name);
       }
-
-      list += `     </div>`;
-      list += `   </table>`;
-      document.write(list);
+      if (true) {
+        let name = "스파이더맨";
+        console.log(name);
+      }
+      console.log(name);
     </script>
-    <style>
-      table {
-        border-collapse: collapse;
-      }
-      div {
-      }
-      tr,
-      td {
-        border: 1px solid black;
-      }
-    </style>
   </head>
   <body></body>
 </html>
