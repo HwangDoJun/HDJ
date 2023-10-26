@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>새 문법 nullish-coalescing</title>
+    <script>
+      /* function f1(text) {
+        const print = text;
+        for (let i = 0; i < 5; i++) {
+          console.log(i + 1 + ":", print);
+        }
+      } */
+
+      function f1(text) {
+        const print = text ?? alert("헤헤헤헤"); //함수도 가능; null, undefined를 잡아낸다.
+        console.log(print);
+      }
+      function f2(text = "기본값") {
+        //null값은 잡아내지 못한다.
+        const print = text;
+        console.log(print);
+      }
+      function f3(text) {
+        const print = text || "or값이 잡아냄"; //0값과 false값까지 출력된다.
+        console.log(print);
+      }
+      function f4(text) {
+        const print = text.split(","); //split 쓰고 괄호 안에 ,를 넣으면 ,를 기준으로 배열이 정리됨
+        console.log(text); //옵셔널체이닝 undefined가 생길 경우 에러 안남
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
