@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      for (let i = 5; i > 0; i--) {
+        const input = prompt("1 ~ 100사이에 있는 숫자를 맞혀봐라 애송이...");
+        const ran = Math.floor(Math.random() * 1);
+        console.log(ran, "%");
+
+        if (ran > input) {
+          alert(`${input}보다 더 크다 애송이.` + " 남은 기회" + `${i - 1}번`);
+          //document.write("그것보다 더 크다 애송이." + " 남은 기회");
+        }
+        if (ran < input) {
+          alert(`${input}보다 더 작다 애송이.` + " 남은 기회" + `${i - 1}번`);
+          //document.write("그것보다 더 작다 애송이." + " 남은 기회");
+        }
+        if (ran == input) {
+          alert("축하한다 애송이");
+          document.write("<h2>확률 망겜이지?</h2>");
+          break;
+        }
+        if (i == 1) {
+          document.write("<h1>꺼억~~~^^</h1>");
+          break;
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
