@@ -5,14 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      for(let i = ;;){
-        const input = prompt("가위바위보 ㄱㄱ")
-        const ran = Math.floor(Math.random()*4)
+      // for (let i = 0; true; i++) {
+      while (true) {
+        const input = prompt("가위바위보 ㄱㄱ");
+        const ran = Math.floor(Math.random() * 2);
+        const arr = ["가위", "바위", "보"];
+        console.log(ran, "%");
 
-        if(){}
-        if(){}
-        if(){}
+        // if (input == "가위") {
+        //   hand = 0;
+        // }
+        // if (input == "바위") {
+        //   hand = 1;
+        // }
+        // if (input == "보") {
+        //   hand = 2;
+        // }
+        const hand = arr.indexOf(input);
+        const com = arr[ran];
 
+        if (
+          (hand == 1 && ran == 0) ||
+          (hand == 0 && ran == 2) ||
+          (hand == 2 && ran == 1)
+        ) {
+          for(i = 0; true; i++){
+
+          }
+          alert(`컴퓨터: ${com}\n 당신: ${input}\n제길 니가 이겼다...\n 승률: ${}\n 플레이어: ${}승, 컴퓨터: ${}승`);
+        }
+        if (hand == ran) {
+          alert(`컴퓨터: ${com}\n당신: ${input}\n비겼네 다시 ㄱㄱ`);
+        }
+        if (
+          (hand == 0 && ran == 1) ||
+          (hand == 2 && ran == 0) ||
+          (hand == 1 && ran == 2)
+        ) {
+          alert(`컴퓨터: ${com}\n당신: ${input}\n응 패배자~~`);
+        }
+        if (!input) {
+          document.write("<h1>쫄? 다시ㄱㄱ</h1?");
+          break;
+        }
       }
     </script>
   </head>
