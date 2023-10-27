@@ -6,9 +6,9 @@
     <title>Document</title>
     <script>
       const arr = [];
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; arr.length < 6; i++) {
         const ran = ~~Math.floor(Math.random() * 45) + 1;
-        arr.push(ran);
+        if (arr.indexOf(ran) === -1) arr.push(ran);
       }
       console.log(arr);
     </script>

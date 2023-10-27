@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배열의 초기화</title>
+    <script>
+      let arr = [11, 22, 33, 44, 55, 66];
+      console.log("시작", arr);
+      for (let i = 0; arr.length > 0; i++) {
+        arr.pop();
+      }
+      //   arr = [];
+      //   arr.length = 0; //const로 할 경우 위의 방식이 안통하지만, 이런 식으로 하면 초기화가 된다.
+      // ~.aaa() : 메소드(기능이 존재)
+      // ~.bbb : 속성(기능이 없음)
+      console.log("종료", arr); //초기화(단, let으로 할 때만 가능하다.)
+    </script>
+  </head>
+  <body></body>
+</html>
