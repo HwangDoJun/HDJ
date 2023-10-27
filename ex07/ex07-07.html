@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const input = prompt("주사위 몇 번 돌릴거임?");
+      let ct1 = 0;
+      let ct2 = 0;
+      let ct3 = 0;
+      let ct4 = 0;
+      let ct5 = 0;
+      let ct6 = 0;
+      for (let i = 0; i < input; i++) {
+        const ran = Math.floor(Math.random() * 6);
+
+        if (ran == 1) {
+          ct1++;
+        }
+        if (ran == 2) {
+          ct2++;
+        }
+        if (ran == 3) {
+          ct3++;
+        }
+        if (ran == 4) {
+          ct4++;
+        }
+        if (ran == 5) {
+          ct5++;
+        }
+        if (ran == 0) {
+          ct6++;
+        }
+      }
+
+      let cnt1 = (ct1 / input) * 100;
+      let cnt2 = (ct2 / input) * 100;
+      let cnt3 = (ct3 / input) * 100;
+      let cnt4 = (ct4 / input) * 100;
+      let cnt5 = (ct5 / input) * 100;
+      let cnt6 = (ct6 / input) * 100;
+
+      document.write(`주사위 1의 개수: ${ct1} | ${cnt1}%`);
+      document.write(`주사위 2의 개수: ${ct2} | ${cnt2}%`);
+      document.write(`주사위 3의 개수: ${ct3} | ${cnt3}%`);
+      document.write(`주사위 4의 개수: ${ct4} | ${cnt4}%`);
+      document.write(`주사위 5의 개수: ${ct5} | ${cnt5}%`);
+      document.write(`주사위 6의 개수: ${ct6} | ${cnt6}%`);
+      document.write(`총 돌린 횟수: ${input}`);
+    </script>
+  </head>
+  <body></body>
+</html>

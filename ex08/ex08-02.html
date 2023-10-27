@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.time("테스트시간");
+      let d = [0, 0, 0, 0, 0, 0];
+
+      let d1 = (d2 = d3 = d4 = d5 = d6 = 0);
+      for (let i = 0; i < 10000; i++) {
+        const dice = ~~(Math.random() * 6) + 1;
+        for (let j = 0; j < 6; j++) {
+          if (dice === j + 1) {
+            d[j]++;
+          }
+        }
+      }
+      //       console.log(`d1:${d1}\nd2:${d2}\nd3:${d3}\nd4:${d4}\nd5:${d5}\nd6:${d6}\n
+      // `);
+      for (const n in d) {
+        console.log(`${n * 1 + 1}번:${d[n]}`);
+      }
+      console.log(`total:${d[0] + d[1] + d[2] + d[3] + d[4] + d[5]}`);
+      console.timeEnd("테스트시간");
+    </script>
+  </head>
+  <body></body>
+</html>
