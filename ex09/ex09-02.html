@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      console.time("시간측정");
+      const start = new Date();
+      let test = 0;
+      console.log(test);
+      for (let i = 0; i < 10 * 1000 * 1000; i++) {
+        test += i;
+      }
+      console.log(test);
+      const dtime = new Date() - start;
+      console.log(dtime + "ms");
+      const dd = console.timeEnd("시간측정");
+      document.write(`${dtime}ms시간이 측정됨`);
+    </script>
+  </head>
+  <body></body>
+</html>

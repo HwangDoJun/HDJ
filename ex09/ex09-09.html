@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function fn1() {}
+      fn1();
+      fn2();
+      function fn1() {
+        console.log("fn1 함수가 실행됨");
+      }
+      const fn2 = function () {
+        //표현식이 호이스팅 적용이 안되니 에러 발생
+        console.log("fn2 함수가 실행됨");
+      }; //함수표현식은 호이스팅이 안됨(함수선언식은 가능)
+    </script>
+  </head>
+  <body></body>
+</html>
