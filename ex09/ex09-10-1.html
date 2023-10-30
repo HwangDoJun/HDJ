@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const ran = Math.floor(Math.random() * 3);
+      const arr = ["가위", "바위", "보"];
+      const com = arr[ran];
+
+      function fn0() {
+        if (ran == 2) {
+          console.log("fn0이 실행됨");
+          document.write(
+            `<button onclick="fn0()">가위</button><button onclick="fn1()">바위</button><button onclick="fn2()">보</button><h1>제길 니가 이김...</h1><p>컴퓨터:${com}</p><p>당신:가위</p>`
+          );
+          return 0;
+        }
+        if (ran == 1) {
+          console.log("fn0이 실행됨");
+          document.write(
+            `<button onclick="fn0()">가위</button><button onclick="fn1()">바위</button><button onclick="fn2()">보</button><h1>응 패배자~</h1><p>컴퓨터:${com}</p><p>당신:가위</p>`
+          );
+          return 0;
+        }
+        if (ran == 0) {
+          console.log("fn0이 실행됨");
+          document.write(
+            `<button onclick="fn0()">가위</button><button onclick="fn1()">바위</button><button onclick="fn2()">보</button><h1>비겼네? 다시 ㄱㄱ</h1><p>컴퓨터:${com}</p><p>당신:가위</p>`
+          );
+          return 0;
+        }
+      }
+
+      function fn1() {
+        if (ran == 0) {
+          console.log("fn1이 실행됨");
+          document.write(
+            `<button onclick="fn0()">가위</button><button onclick="fn1()">바위</button><button onclick="fn2()">보</button><h1>제길 니가 이김...</h1><p>컴퓨터:${com}</p><p>당신:바위</p>`
+          );
+          return 0;
+        }
+        if (ran == 2) {
+          console.log("fn1이 실행됨");
+          document.write(
+            `<button onclick="fn0()">가위</button><button onclick="fn1()">바위</button><button onclick="fn2()">보</button><h1>응 패배자~</h1><p>컴퓨터:${com}</p><p>당신:바위</p>`
+          );
+          return 0;
+        }
+        if (ran == 1) {
+          console.log("fn1이 실행됨");
+          document.write(
+            `<button onclick="fn0()">가위</button><button onclick="fn1()">바위</button><button onclick="fn2()">보</button><h1>비겼네? 다시 ㄱㄱ</h1><p>컴퓨터:${com}</p><p>당신:바위</p>`
+          );
+          return 0;
+        }
+      }
+
+      function fn2() {
+        if (ran == 1) {
+          console.log("fn2이 실행됨");
+          document.write(
+            `<button onclick="fn0()">가위</button><button onclick="fn1()">바위</button><button onclick="fn2()">보</button><h1>제길 니가 이김...</h1><p>컴퓨터:${com}</p><p>당신:</p>`
+          );
+          return 0;
+        }
+        if (ran == 0) {
+          console.log("fn2이 실행됨");
+          document.write(
+            `<button onclick="fn0()">가위</button><button onclick="fn1()">바위</button><button onclick="fn2()">보</button><h1>응 패배자~</h1><p>컴퓨터:${com}</p><p>당신:보</p>`
+          );
+          return 0;
+        }
+        if (ran == 2) {
+          console.log("fn2이 실행됨");
+          document.write(
+            `<button onclick="fn0()">가위</button><button onclick="fn1()">바위</button><button onclick="fn2()">보</button><h1>비겼네? 다시 ㄱㄱ</h1><p>컴퓨터:${com}</p><p>당신:보</p>`
+          );
+          return 0;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="fn0()">가위</button>
+    <button onclick="fn1()">바위</button>
+    <button onclick="fn2()">보</button>
+  </body>
+</html>

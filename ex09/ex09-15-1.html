@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      go();
+      function on() {
+        go();
+      }
+      function off() {
+        go();
+      }
+      function go() {
+        document.write(`<button onclick="on()">on/off</button>
+    <div style="width: 100px; height: 100px; background-color: gray"></div>`);
+        document.close();
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

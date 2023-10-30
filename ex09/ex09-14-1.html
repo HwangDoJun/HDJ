@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>증가/감소버튼(추가 축약)</title>
+    <script>
+      let num = 0;
+      go();
+
+      function up() {
+        num++;
+        go();
+      }
+      function down() {
+        num--;
+        go();
+      }
+      function go() {
+        document.write(`<button onclick="up()">증가버튼</button><button onclick="down()">감소버튼</button>
+    <div>${num}</div>`);
+        document.close();
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
