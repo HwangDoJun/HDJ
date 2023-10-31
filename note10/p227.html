@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let state;
+      setTimeout(fn1, 2 * 1000);
+      const t2 = setTimeout(fn2, 4 * 1000);
+      function fn1() {
+        console.log("우와 비가오네! 그래도 밖에 나갈까?");
+        let state = confirm("비가오네");
+        if (!state) {
+          clearTimeout(t2);
+        }
+        console.log(`ID${t2}타이머가 취소되었습니다.`);
+      }
+      function fn2() {
+        console.log("");
+        alert("우와 햇살이 눈부시다.");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
