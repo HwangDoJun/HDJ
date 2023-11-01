@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객체지향</title>
+    <script>
+      const obj = {
+        name: "홍길동",
+        age: "122",
+        address: "한국",
+        gender: "male",
+        barcode: [1, 23, 45, 163, 7742, 231],
+        hope: function () {
+          return "아아아ㅏ아아아아";
+        },
+        hello() {
+          return "안녕하세요.";
+        }, //콜론이랑 function 생략 가능(최신 문법인듯)
+      };
+      console.log(obj);
+      console.log(obj["age"]);
+      console.log(obj.name);
+      console.log(obj.barcode);
+      console.log(obj.hope);
+      console.log(obj.hello);
+    </script>
+  </head>
+  <body></body>
+</html>
