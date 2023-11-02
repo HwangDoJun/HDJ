@@ -22,6 +22,13 @@
 
           //   체크박스 만들기
           checkbox.type = "checkbox"; //input의 속성에 체크박스 타입을 넣는다.
+          checkbox.addEventListener("change", (event) => {
+            if (event.target.checked) {
+              item.style.textDecoration = "line-through";
+            } else {
+              item.style.textDecoration = "";
+            }
+          });
 
           // input의 내용을 넣기\
           text.textContent = input.value;
