@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log(document.body);
+        const h1 = document.querySelector;
+        console.log(h1);
+        const start = document.querySelector(".start");
+        console.log(start);
+        const best = document.querySelector("#best");
+        console.log(best);
+        const type = document.querySelector('[type="text"]');
+        console.log(type);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>저는 body에 있는 내용입니다.</h1>
+    <div class="start">
+      <ul>
+        <li class="list">아침: 토스트</li>
+        <li class="list" id="best">점심: 국밥</li>
+        <li class="list">저녁: 라면</li>
+        <li><input type="text" placeholder="원하는 야식?" /></li>
+      </ul>
+    </div>
+    <div class="end">이상 끝입니다.</div>
+  </body>
+</html>
