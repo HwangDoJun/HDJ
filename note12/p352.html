@@ -4,13 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      div[class="cls0"] {
+        background-color: azure;
+      }
+      div[class="cls1"] {
+        background-color: khaki;
+      }
+    </style>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const input = document.querySelector("#todo");
         const todoList = document.querySelector("#list");
         const addButton = document.querySelector("#add-button");
+        let ctid = 0;
 
         const addTodo = () => {
+          ++ctid;
           console.log("addTodo가 실행중.");
           const item = document.createElement("div");
           const checkbox = document.createElement("input");
@@ -19,6 +29,8 @@
 
           //   버튼을 누를때 요소 배치시키기
           todoList.appendChild(item).append(checkbox, text, button);
+          item.setAttribute("id", `list${ctid}`);
+          item.setAttribute("class", `cls${ctid % 2}`);
 
           //   체크박스 만들기
           checkbox.type = "checkbox"; //input의 속성에 체크박스 타입을 넣는다.
@@ -38,6 +50,15 @@
 
           //   button 설정하기
           button.textContent = "제거하기";
+          button.addEventListener("click", () => {
+            item.parentNode.removeChild(item);
+            console.log(
+              item.id +
+                "의 아이디를 가진" +
+                item.className +
+                "가 삭제되었습니다."
+            );
+          });
         };
 
         addButton.addEventListener("click", addTodo);

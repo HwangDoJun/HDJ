@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+      </head>
+      <body>
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+      <script>
+        const ctx = document.getElementById("myChart");
+        const label = ["월", "화", "수", "목", "금", "토", "일"];
+        const data = [12, 19, 3, 5, 2, 3, 9];
+
+        new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: label,
+            datasets: [
+              {
+                label: "판매량",
+                data,
+                borderWidth: 2,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      </script>
+    </body>
+  </head>
+  <body></body>
+</html>
