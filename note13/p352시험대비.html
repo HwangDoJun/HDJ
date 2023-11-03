@@ -4,51 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-      }
-      .main {
-        border: 1px solid black;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-      .container {
-        height: 70%;
-        display: flex;
-      }
-      nav,
-      aside {
-        width: 20%;
-        border: 1px solid gray;
-        background-color: cornflowerblue;
-      }
-      section {
-        width: 80%;
-        border: 1px solid gray;
-      }
-
-      header,
-      footer {
-        width: 100%;
-        border: 1px solid black;
-        height: 15%;
-        background-color: antiquewhite;
-        text-align: center;
-      }
-      ul {
-        list-style-type: none;
-        text-align: left;
-        padding: 10px;
-      }
-      a {
-        text-decoration-line: none;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="main">
@@ -61,7 +17,12 @@
             <li><a href="https://google.com">수정사항</a></li>
           </ul>
         </nav>
-        <section></section>
+        <section id="todoBox">
+          <h1>할 일 목록</h1>
+          <input type="text" id="todo" pattern="" />
+          <button id="add-button">추가하기</button>
+          <div id="list"></div>
+        </section>
         <aside>
           <img
             src="./imgg/{A54A4264-7442-4C21-BE95-3F492270F73E}.png.jpg"
@@ -69,7 +30,8 @@
           />
         </aside>
       </div>
-      <footer>Copyright Hwang</footer>
+      <footer>Copyright 황도준</footer>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
