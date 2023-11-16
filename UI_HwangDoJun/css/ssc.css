@@ -1,0 +1,49 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+.main{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;    
+}
+.container{
+    min-width: 400px;
+    height: 70%;
+    display: flex;
+}
+nav, aside{
+    width: 20%;
+    border: 1px solid darkgray;
+    background-color: aquamarine;
+}
+section{
+    width:80%;
+    border: 1px solid gray;
+    padding: 10px;
+}
+header, footer{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    height: 15%;
+}
+header{
+    background-image: url("https://img.freepik.com/free-vector/autumn-background-with-leaves_52683-42914.jpg")
+}
+footer{
+    background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgIBwcICAgICAcHBwoHCAcHBw8ICQcKFREWFhURExMYHSggGCYlJxMTITEhJSkrLi4uFx8zODM4NygtLisBCgoKDg0NDg0NFSsZFRkrKysrKystLTc3Ky0rKysrKysrNy0tKy03KzctKysrLTctKysrLTcrKys3Kys3KysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQIDBAf/xAAmEAEAAwEAAQIFBQEAAAAAAAAAAQIREiFRcQMxYYHxIkKRsfAy/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAYEQEBAQEBAAAAAAAAAAAAAAAAEQESAv/aAAwDAQACEQMRAD8A+m2rjMw72jYc8+jtmvJvlzmEmHTmThazynw6/p92sdYiIjPQxmt8OXJy6YmLTlytXXOaY9GJMLWd8PNNUmr0TT0Ymq1jfDhNUmrtMJNVrPLhNWZq7zVmarU5cJqtJ58ft/p0mqTVazG8ifl5hJqlJmvif+f6dc35fJGsyuPKTV2mqTUpy4TVcdJqmLWeXPk5deTkpy4cpy78pytTlw5Tl2mpyVOXP4ceZj1h05SIyYn6u9aTacj+fRN1rPLjWk2nI+8+jrWkVjx959XbmKxkff6mM9OnDlynLrhhTly5Tl15OSpy92M2h0SY1yezccsKx+qP5XGqR81Zi4ijKxkaTFIzhjSCRnEmG8RakcpqzMOss4tY3HKapNXXExazHKaszV2mEmFqRwmq0nn2dJqnK1I1mpyVnn2dM1lqOU1SauuJi1I5xBy3jWFI5cpy64mFOXLlOXXFimz/ALwtTlxr8ObTkfh6q1itfH5la1isZH5WGd2t+fMZxMbwxGoxiY6YmFSMYY3hhUj0gMPQzaFrHhQSGIoKyNJgiJjWICI0kqjKY1hgkYxMbwxUjniY6YmKkc5hMdMMKzHKYWs57N4mLSLhiV8ezeIsYwiG8TAjOGN4RXSkYiuukViIyGorhiVrPLMwkR5bxMCCNYYixnDGsMVIziY3iYEdgGHUBQRFAQUVEFQERoBkxcMEjOCikZwxpMEjOJjeJgkZxMbxMWpGMWPHs1iYEXDCPHs1EaisxHluIxcBrMQaTEImJjWARBTAiYYuARMTGkCOiKI0ACiKCIKAgqAgoCCiohipgJgoDI0AyY1iYJGcMawwIzmtR4UCAKKgoKgoIgoCCgIKAoojQigIKAgoIgAoACCgiCgIKAgAIKKIqgRBRBkUUFRUBFARQBBQEFAFAUAAAAAAAAAAAARQEFAQUERQFEUBBQEFAZVQQEUUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//2Q==")
+}
+ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 10px;
+}
+a{
+    text-decoration-line: none;
+}
+#todobox{
+    background-image: url("https://sun9-30.userapi.com/impg/FHXnt0PrOWWQvBnT6B8sxZ752HQW-7zmUJLzPQ/UCMu833ag-k.jpg?size=563x641&quality=96&sign=a97ea47866fe553d2a36cda57ca6df5e&c_uniq_tag=aAe5ks6u14WEiqSkZaBPlLdRRhlVE7Wy7sxRE5hbwtw&type=album")
+}
